@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+C++ developer for the most part. I enjoy a wide variety of coding aspects, including performance, software architecture and build systems :)
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[brenorg@gmail.com](mailto:brenorg@gmail.com)
