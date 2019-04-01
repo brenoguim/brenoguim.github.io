@@ -152,7 +152,7 @@ class Ht
     {
         // The insert implementation checks if the container has the element already.
         // If not, search for the proper bucket and insert it.
-        if (!contains(obj)
+        if (!contains(obj))
         {
  
             std::size_t bucketId = std::hash<T>()(obj) % m_buckets.size();
@@ -238,12 +238,12 @@ class Ht
     bool insert(const T& obj)
     {
         rehashIfNecessary();
-        if (!contains(obj)
+        if (!contains(obj))
         {
- 
             std::size_t bucketId = std::hash<T>()(obj) % m_buckets.size();
             auto& bucket = m_buckets[bucketId];
             bucket.push_back(obj);
+            ++m_numberOfElements;
             return true;
         }
         return false;
